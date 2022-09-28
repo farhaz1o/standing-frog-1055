@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expenses</title>
+    <link rel="stylesheet" href="./style/expenses.css">
+
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <div id="header">
+                <h1>Expenses</h1>
+                <div>
+                    <button class="expbtn" id="ebtn">+ Track expenses</button>
+                </div>
+            </div>
+            <!-- form -->
+            <div id="fcontainer">
+                <!-- date -->
+                <div id="date">
+                    <h2>Date</h2>
+                    <input type="date">
+                </div>
+                <!-- formdata -->
+                <form action="">
+                    <h2>Project / Category</h2>
+                    <select name="" id="project">choose a project...</select>
+                    <select name="" id="category">choose a category</select>
+                    <input type="text" id="note" >
+                    <input type="file" id="file">
+                    <input type="checkbox" id="term" name="term" value="true">
+                    <label for="term">This expense is billable</label>
+                    <button class="expbtn" id="sexpence">save expence</button>
+                    <button id="cancel">cancel</button>
+                </form>
+                <div id="amount">
+                    <h2>Amount</h2>
+                    <input type="text" id="tamount">
+                </div>
+            </div>
+            <!-- expence table -->
+            <div id="content">
+                <div id="excontent">
+                    <img src="https://cache.harvestapp.com/static/illustrations/expense_onboard-AAC9C67E.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./script/expenses.js"></script>
