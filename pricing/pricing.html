@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text{
+display: flex;
+gap: 5px;
+justify-content: center;
+
+        }
+        #container{
+text-align: center;
+        }
+        *{
+font-family: MuotoWeb,sans-serif;
+background-color: #fff8f1;
+        }
+        .con1{
+       height: 200px;
+       width: 32%;
+       padding: 15px;
+       border: 1px solid orangered;
+       border-radius: 10px;
+       padding-bottom: 20px;
+        }
+    .con1>div{
+  display: flex;
+  height: 130px;
+  justify-content: space-between;
+    }
+       .con1>div>div{
+   height: 200px;
+       }
+       .btn1{
+background-color: green;
+color: white;
+width: 80%;
+height: 35px;
+border: 0px;
+border-radius: 10px;
+margin-top: 10px;
+       }
+       #boxes{
+display: flex;
+gap: 20px;
+margin-left: 300px;
+
+       }
+       #img1{
+width: 90%;
+margin-top: 35px;
+border: 1px solid orangered;
+height: 80px;
+padding: 25px;
+       }
+       #container2{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+      width: 80%;
+      margin: auto;
+      margin-top: 30px;
+       }
+       #container2>div{
+        min-height: 130px;
+       }
+       #container2>div>p{
+      color: grey;
+       }
+       #container2>div>img{
+      margin-top: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Pricing</h2>
+        <!-- Default checked -->
+        <div id="text">
+        <p>Monthly</p>
+        <p>Annual</p>
+</div>
+<p>Save 10% with annual plan</p>
+<div id="boxes">
+    <div class="con1">
+      <div>
+        <div>
+            <h2 style="color:orangered;">Free</h2>
+            <p>1 Seat</p>
+            <p>2 Project</p>
+        </div>
+        <div>
+            <h2>$0</h2>
+            <p>Forever</p>
+        </div>
+      </div>
+      <button  class="btn1">30-days free trial</button>
+      <p>No credit card required.</p>
+    </div>
+    <div class="con1">
+        <div>
+          <div>
+              <h2 style="color:orangered;" >Pro</h2>
+              <p>Unlimited Seat</p>
+              <p>Unlimited Project</p>
+          </div>
+          <div>
+              <h2>$12</h2>
+              <p>per seat per month</p>
+          </div>
+        </div>
+        <button class="btn1">30-days free trial</button>
+        <p>No credit card required.</p>
+    </div>
+    </div>
+      <img id="img1" src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/Test-3001-free-trial-spz-baseline/social-proofs_2x.png">
+      <div id="container2">
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459455/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/time-tracking.svg">
+        <h2 >Time Trackings</h2>
+        <p>Start and stop tracking with 1-click. Apps for desktop, mobile, and web browser.
+        </p>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459455/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Reminders.svg">
+        <h2 >Reminders</h2>
+        <p>Subtle reminders to track time. Never lose another hour.
+        </p>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459455/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/time-tracking.svg">
+        <h2 >Invoicing
+        </h2>
+        <p>Automatically create invoices from tracked time and expenses.
+        </p>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Online-Payments.svg">
+        <h2>Online Payments
+        </h2>
+        <p>Accept online payments. Sync with QuickBooks and Xero.
+        </p>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Reporting.svg">
+        <h2 >Reporting
+        </h2>
+        <p>Create reports across projects. Budgets, time, team capacity, cost breakdowns, etc.
+        </p>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Integrations.svg">
+        <h2 >Integrations
+        </h2>
+        <p>Integrate with 50+ apps including Asana, Basecamp, Trello, Slack, and more.
+        </p>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Budgets.svg">
+        <h2 >Budgets</h2>
+        <p>Monitor project budgets. Get early alerts when projects take longer than budgeted.
+        </p>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459456/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Cost-Tracking.svg">
+        <h2>Cost Tracking
+        </h2>
+        <p>See how much every project costs to complete. Drill down into details.
+        </p>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Expenses.svg">
+        <h2>Expenses</h2>
+        <p>Add project expenses in just a few clicks. Easily attach photos of receipts.
+        </p>
+      </div>
+      </div>
+</body>
+</html>
