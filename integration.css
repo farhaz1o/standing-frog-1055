@@ -1,0 +1,84 @@
+#hr{
+    background-color: rgb(250,93,0);
+}
+#search{
+    padding: 20px 35%;
+    border-radius: 20px;
+    font-size: large;
+    font: bold;
+    /* margin-left:75px; */
+    margin:80px 80px 40px 80px;
+}
+body{
+    background-color: rgb(255,248,241);
+}
+#up2{
+    display: flex;
+
+    width: 80%;    
+}
+/* #up2 div{
+    margin: auto;
+} */
+#container{
+    width:60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:60px;
+}
+#btn{
+    width:30%;
+    text-align: center;
+    margin-left:70px;
+}
+#btn button{
+    display: block;
+    font-size:large;
+    border: 0ch;
+    margin-top:60px;
+    margin-left:20px;
+    
+}
+#container img{
+    width: 80px;
+}
+#container div{
+    background-color: white;
+    border-radius: 20px;
+    width:220px;
+    height: 200px;
+    padding: 20px;
+}
+#container div:hover{
+    background-color:rgb(254, 243, 232) ;
+}
+#low1{
+    display: flex;
+    gap:50px;
+}
+#first{
+    width: 30%;
+    text-align: center;
+}
+#last{
+    width:70%;
+    margin-left: -50px;
+}
+#last button{
+    background-color: black;
+    color: white;
+    border-radius:10px;
+    padding: 10px 40px;
+    font-size: larger;
+    font-weight: bold;
+}
+#last p{
+    font-size:30px;
+    width: 80%;
+}
+#last h1{
+    font-size:40px; 
+}
+#lower{
+    display: flex;
+}
