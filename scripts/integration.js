@@ -287,11 +287,6 @@ let data=[
         p:"Track time in Harvest from within Nifty.",
         n:"10",
     },
-    // {
-    //     i:"",
-    //     t:"",
-    //     p:"",
-    // }
 ]
 
    let appendData=(data)=>{
