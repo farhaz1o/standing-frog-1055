@@ -288,7 +288,6 @@ let data=[
         n:"10",
     },
 ]
-
    let appendData=(data)=>{
     let cont=document.querySelector("#container")
         cont.innerHTML=null
