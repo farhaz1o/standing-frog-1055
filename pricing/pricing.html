@@ -44,6 +44,9 @@ border: 0px;
 border-radius: 10px;
 margin-top: 10px;
        }
+       .btn1:hover{
+        background-color: rgb(154, 207, 154);
+       }
        #boxes{
 display: flex;
 gap: 20px;
@@ -74,6 +77,54 @@ padding: 25px;
        #container2>div>img{
       margin-top: 20px;
        }
+       #con3{
+     display: flex;
+     width: 85%;
+     margin-left: 150px;
+     gap: 20px;
+    margin-top: 50px;
+       }
+       #con3>div{
+        border: 1px solid red;
+        width: 30%;
+        height: 150px;
+        display: flex;
+        color: black;
+       }
+
+       .accordion {
+  background-color: #ecb985;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+  border: 1px solid wheat;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #fff8f1; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:#fff8f1 ;
+  overflow: hidden;
+}
+#con7{
+display:grid;
+grid-template-columns: 40% 60%;
+margin-top: 30px;
+text-align: center;
+}
+#con7>div:nth-child(1){
+width: 40%;
+}
     </style>
 </head>
 <body>
@@ -179,5 +230,100 @@ padding: 25px;
         </p>
       </div>
       </div>
+      <div id="con3">
+        <div>
+          <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656310941/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/Money.svg">
+          <div class="clse">
+            <h2>$7.4 billion
+            </h2>
+            <p style="color: grey;text-align: center;">Lost per day due to incorrectly recorded work activities
+  
+            </p>
+          </div>
+         
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656310706/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/less-admintime.svg">
+          <div class="clse">
+            <h2>80%
+            </h2>
+            <p style="color: grey;text-align: center;">Less admin with automated time tracking
+  
+            </p>
+          </div>
+         
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656311111/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/Employee_Tracking.svg">
+          <div class="clse">
+             <h2>$52,000
+          </h2>
+          <p style="color: grey;text-align: center;">Extra billable time per employee with better time tracking
+
+          </p>
+        </div>
+         
+        </div>
+      </div>
+      <div id="con7">
+        <div><h1 style="margin-left: 200px ;">Frequently asked questions</h1></div>
+        <div>
+<button class="accordion">How would I signup for free plan?</button>
+<div class="panel">
+  <p>When your trial account meets the free plan’s requirements, you can sign up for the free version during the upgrade process. On the Upgrade Your Harvest Plan page, click the switch to the free version link below the plan options.</p>
+</div>
+
+<button class="accordion">What Happens at the end of my trial?</button>
+<div class="panel">
+  <p>You can upgrade to a paid plan any time during your 30-day trial period. If you haven’t upgraded at the end of 30 days, your trial account will be automatically deactivated. We don’t collect credit card info when you start a trial, so you don’t need to worry about being charged.
+
+    Even though your trial account will be deactivated, we won’t delete your data. If you ever want to try Harvest again in the future, your data will be waiting for you.
+    
+    If you’re looking to switch to the free plan, you can do that any time during your trial as well. You’ll see that option during the upgrade process as long as your account meets the free plan’s requirements.
+    
+    </p>
+</div>
+
+<button class="accordion">does my team qualify for any discounts?</button>
+<div class="panel">
+  <p>Yes! When you pay for the year up front, you get a 10% discount that’s automatically applied to your account.
+
+    We also offer discounts upon request to teams of 50+ people, nonprofits, schools and universities, educators using Harvest in a classroom setting, and students</p>
+</div>
+<button class="accordion">How can i get qoute for my team?</button>
+<div class="panel">
+  <p>Use our handy pricing calculator to see how much your team would pay for Harvest and what discounts could apply.</p>
+</div>
+<button class="accordion">What are our payment option?</button>
+<div class="panel">
+  <p>You can pay for Harvest via credit card either monthly or yearly. If you pay for the year in advance, you’ll get a 10% discount on your bill!
+
+    If you have 10 or more seats and pay for the year in advance, you can also request an invoice when you upgrade and pay for your subscription via check or bank transfer.</p>
+</div>
+<button class="accordion">What happen if my team size changes?</button>
+<div class="panel">
+  <p>If you’re paying monthly, you can add or remove seats at any time. Your price will be adjusted on your next monthly bill. If you have contractors or interns, or you anticipate the number of seats you’ll need may fluctuate from month to month, the monthly option is a better fit for you.
+
+    If you paid for the year in advance, you can add seats at any time and will be charged a prorated amount based on the number of days left in your billing cycle. While you can’t remove seats during your current billing cycle, you can indicate inside your account if you’d like your yearly plan to renew with fewer seats. Keep in mind that yearly accounts receive a 10% discount, so if your seat requirements don’t change from month to month, yearly is probably the best option for you.</p>
+</div>
+</div>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
 </body>
 </html>
