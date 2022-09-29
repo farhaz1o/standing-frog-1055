@@ -68,12 +68,12 @@ let data=[
        i:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/zapier.png?width=200&name=zapier.png",
        t:"Zapier",
        p:"Connect Harvest to 1,000+ apps with automated workflows using Zapier.",
-       n:"7",
+       n:"2",
     },{
        i:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/ifttt.png?width=200&name=ifttt.png",
        t:"IFTTT",
        p:"Create simple connections between Harvest and the apps you use every day.",
-       n:"7",
+       n:"2",
     },{
         i:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/zendesk.png?width=200&name=zendesk.png",
         t:"Zendesk",
