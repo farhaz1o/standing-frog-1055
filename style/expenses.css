@@ -44,11 +44,36 @@ body{
 margin-top: 20px;
 }
 #excontent{
-    padding:50px
+    padding:50px;
+    display: flex;
 }
 
 /* form */
 #fcontainer{
     background: #fff8f1;
     border: 1px solid #ffa26c;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input, select{
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#date{
+    width:20%;
+}
+#amount{
+    width:20%;
+}
+#s_expenses{
+    background-color:  #ffa26c;
+    color: white;
 }

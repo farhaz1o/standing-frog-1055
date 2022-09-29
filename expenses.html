@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./style/expenses.css">
 
 </head>
+
 <body>
     <div id="main">
         <div id="container">
@@ -22,23 +24,29 @@
                 <!-- date -->
                 <div id="date">
                     <h2>Date</h2>
-                    <input type="date">
+                    <input type="date" id="Date">
                 </div>
                 <!-- formdata -->
-                <form action="">
+                <form action>
                     <h2>Project / Category</h2>
-                    <select name="" id="project">choose a project...</select>
-                    <select name="" id="category">choose a category</select>
-                    <input type="text" id="note" >
+                    <select name="" id="project">
+                        <option value="" selected disabled>choose a project...</option>
+                        <option value="Demo project">Demo Project</option>
+                    </select>
+                    <select name="" id="category">
+                        <option value="" selected disabled>choose a category...</option>
+                        <option value="e-commerce">E-Commerce</option>
+                    </select>
+                    <input type="text" id="note">
                     <input type="file" id="file">
                     <input type="checkbox" id="term" name="term" value="true">
-                    <label for="term">This expense is billable</label>
-                    <button class="expbtn" id="sexpence">save expence</button>
-                    <button id="cancel">cancel</button>
+                    <label for="term">This expense is Billable</label>
+                    <span><button class="expbtn" id="s_expence">save expence</button></span>
+                    <span><button id="cancel">cancel</button></span>
                 </form>
                 <div id="amount">
                     <h2>Amount</h2>
-                    <input type="text" id="tamount">
+                    <input type="text area" id="tamount">
                 </div>
             </div>
             <!-- expence table -->
@@ -50,5 +58,6 @@
         </div>
     </div>
 </body>
+
 </html>
 <script src="./script/expenses.js"></script>
