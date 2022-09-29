@@ -1,0 +1,496 @@
+.css-featuresTab {
+    background-color: rgb(255, 248, 241);
+  }
+  
+  .featuresTab_content {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .head1 {
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0px;
+  }
+  
+  .subHead1 {
+    font-weight: 400;
+    font-size: 29px;
+    margin: 0px;
+  }
+  
+  .featureBtn {
+    display: flex;
+    margin-top: 7%;
+    gap: 5%;
+  }
+  
+  .timeBtn {
+    display: flex;
+    border: 1px solid red;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 80px;
+    width: 390px;
+    justify-content: space-around;
+  }
+  
+  .timeBtn_text {
+    font-size: x-large;
+    margin: 0px;
+  }
+  
+  .reportBtn {
+    display: flex;
+    border: 1px solid red;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 80px;
+    width: 390px;
+    justify-content: space-around;
+  }
+  
+  .reportBtn_text {
+    font-size: x-large;
+  }
+  
+  .invoiceBtn {
+    display: flex;
+    border: 1px solid red;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 80px;
+    width: 390px;
+    justify-content: space-around;
+  }
+  
+  .invoiceBtn_text {
+    font-size: x-large;
+  }
+  
+  .timeTrackingTab {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    margin-top: 10%;
+  }
+  
+  .timeTrackingTab_firstPart {
+    margin-top: 100px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .head2 {
+    text-align: left;
+    color: rgb(251, 112, 30);
+    font-size: 50px;
+    font-weight: 300;
+  }
+  
+  .headText {
+    font-weight: 500;
+    font-size: 25px;
+    padding-right: 30px;
+  }
+  
+  .timeTrackingBtn {
+    margin-top: 40px;
+    background-color: #fc6a15;
+    border-radius: 0.95rem;
+    box-shadow: 0 1px 2px 0 rgb(80 84 87 / 30%), 0 2px 6px 2px rgb(80 85 88 / 15%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    width: 220px;
+  }
+  
+  .timeTracking_img {
+    border: 1px solid black;
+  }
+  
+  .timeTrackingTab_secondPart {
+    display: flex;
+    width: 95%;
+    margin: 5% auto auto;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-family: MuotoWeb, sans-serif;
+    padding-bottom: 9%;
+  }
+  
+  .trackTime_blog {
+    width: 32%;
+  }
+  
+  .trackTime_img {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  
+  .trackTime_head {
+    font-size: 26px;
+  }
+  
+  .trackTime_blog_paraTab {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .workflow_blog {
+    width: 32%;
+    margin-top: 18px;
+  }
+  
+  .workflow_img {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  
+  .workflow_head {
+    font-size: 26px;
+    margin: 0px;
+  }
+  
+  .workflow_blog_paraTab {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .reminder_blog {
+    width: 32%;
+  }
+  
+  .reminder_img {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  
+  .reminder_head {
+    font-size: 26px;
+  }
+  
+  .reminder_blog_paraTab {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .DOE_tab {
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 90px;
+  }
+  
+  .DOE_para {
+    font-size: 33px;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-top: 80px;
+    padding-bottom: 3%;
+  }
+  
+  .DOE_sign {
+    font-size: 25px;
+    font-weight: 450;
+    margin-left: 5%;
+  }
+  
+  .reportsAndAnalysisTab {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    margin-top: 10%;
+  }
+  
+  .RnA_firstPart {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .RnA_firstPart_Left {
+    margin-left: 15px;
+  }
+  
+  .head3 {
+    text-align: left;
+    color: rgb(251, 112, 30);
+    font-size: 50px;
+    font-weight: 300;
+  }
+  
+  .headText {
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 20px;
+    padding-right: 30px;
+  }
+  
+  .RnA_btn {
+    margin-top: 40px;
+    background-color: #fc6a15;
+    border-radius: 0.95rem;
+    box-shadow: 0 1px 2px 0 rgb(80 84 87 / 30%), 0 2px 6px 2px rgb(80 85 88 / 15%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    width: 220px;
+  }
+  
+  .RnA_secondPart {
+    display: flex;
+    width: 95%;
+    margin: 5% auto auto;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-family: MuotoWeb, sans-serif;
+    padding-bottom: 9%;
+    flex-wrap: wrap;
+  }
+  
+  .RnA_budget,
+  .RnA_visualize,
+  .RnA_cost,
+  .RnA_time,
+  .RnA_drive,
+  .RnA_data {
+    width: 32%;
+  }
+  
+  .budgetImg,
+  .visualizeImg,
+  .costImg,
+  .timeImg,
+  .driveImg,
+  .dataImg {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  
+  .budgetHead,
+  .visualizeHead,
+  .costHead,
+  .timeHead,
+  .driveHead,
+  .dataHead {
+    font-size: 26px;
+  }
+  
+  .RnA_budget_secondPart,
+  .RnA_visualize_secondPart,
+  .RnA_cost_secondPart,
+  .RnA_time_secondPart,
+  .RnA_drive_secondPart,
+  .RnA_data_secondPart {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .endTab {
+    border-top: 1px solid red;
+  }
+  
+  .endTab_content {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    line-height: 7vh;
+    padding: 13.5vh 10vw;
+  }
+  
+  .endTab_head {
+    font-size: 40px;
+  }
+  
+  .endTab_headText {
+    font-size: 2vw;
+  }
+  
+  .bottom {
+    display: flex;
+    gap: 2vw;
+  }
+  
+  .endTabBtn {
+    background-color: #fa5d00;
+    border-radius: 20px;
+    color: #fff;
+    height: 70px;
+    font-size: 1.4vw;
+    font-weight: 500;
+    padding: 0 2vw;
+  }
+  
+  .endTab_text {
+    color: #424141;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .endTab_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+  }
+  *,
+  ::before,
+  ::after {
+    border-color: var(--chakra-colors-chakra-border-color);
+    overflow-wrap: break-word;
+  }
+  *,
+  ::before,
+  ::after {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  user agent stylesheet div {
+    display: block;
+  }
+  body {
+    font-family: var(--chakra-fonts-body);
+    color: var(--chakra-colors-chakra-body-text);
+    background: var(--chakra-colors-chakra-body-bg);
+    transition-property: background-color;
+    transition-duration: var(--chakra-transition-duration-normal);
+    line-height: var(--chakra-lineHeights-base);
+  }
+  body {
+    position: relative;
+    min-height: 100%;
+    font-feature-settings: "kern";
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0;
+  }
+  style attribute {
+    color-scheme: light;
+  }
+  .chakra-ui-light :host:not([data-theme]),
+  .chakra-ui-light :root:not([data-theme]),
+  .chakra-ui-light [data-theme]:not([data-theme]),
+  [data-theme="light"] :host:not([data-theme]),
+  [data-theme="light"] :root:not([data-theme]),
+  [data-theme="light"] [data-theme]:not([data-theme]),
+  :host[data-theme="light"],
+  :root[data-theme="light"],
+  [data-theme][data-theme="light"] {
+    --chakra-colors-chakra-body-text: var(--chakra-colors-gray-800);
+    --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
+    --chakra-colors-chakra-border-color: var(--chakra-colors-gray-200);
+    --chakra-colors-chakra-placeholder-color: var(--chakra-colors-gray-500);
+  }
+  
+  :host,
+  :root,
+  [data-theme] {
+    --chakra-ring-inset: var(--chakra-empty);
+    --chakra-ring-offset-width: 0px;
+    --chakra-ring-offset-color: #fff;
+    --chakra-ring-color: rgba(66, 153, 225, 0.6);
+    --chakra-ring-offset-shadow: 0 0 #0000;
+    --chakra-ring-shadow: 0 0 #0000;
+    --chakra-space-x-reverse: 0;
+    --chakra-space-y-reverse: 0;
+    --chakra-colors-transparent: transparent;
+    --chakra-colors-current: currentColor;
+    --chakra-colors-black: #000000;
+    --chakra-colors-white: #ffffff;
+    --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+    --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+    --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+    --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+    --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+    --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+    --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+    --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+    --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.8);
+    --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+    --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+    --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+    --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+    --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+    --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+    --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+    --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+    --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+    --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.8);
+    --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+    --chakra-colors-gray-50: #f7fafc;
+    --chakra-colors-gray-100: #edf2f7;
+    --chakra-colors-gray-200: #e2e8f0;
+    --chakra-colors-gray-300: #cbd5e0;
+    --chakra-colors-gray-400: #a0aec0;
+    --chakra-colors-gray-500: #718096;
+    --chakra-colors-gray-600: #4a5568;
+    --chakra-colors-gray-700: #2d3748;
+    --chakra-colors-gray-800: #1a202c;
+    --chakra-colors-gray-900: #171923;
+    --chakra-colors-red-50: #fff5f5;
+    --chakra-colors-red-100: #fed7d7;
+    --chakra-colors-red-200: #feb2b2;
+    --chakra-colors-red-300: #fc8181;
+    --chakra-colors-red-400: #f56565;
+    --chakra-colors-red-500: #e53e3e;
+    --chakra-colors-red-600: #c53030;
+    --chakra-colors-red-700: #9b2c2c;
+  }
+  
+  html {
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    font-family: system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    touch-action: manipulation;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-color: var(--chakra-colors-chakra-border-color);
+    overflow-wrap: break-word;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-color: var(--chakra-colors-chakra-border-color);
+    overflow-wrap: break-word;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  
