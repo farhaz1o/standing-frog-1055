@@ -131,20 +131,20 @@ body{
     font-weight: bold;
     border: 0ch;
 }
-
-/* Box sizing rules */
+.orbit {
+  --size: 12rem;
+  --speed: 120s;
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
 ol[role=list] {
   list-style: none;
 }
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
@@ -155,7 +155,6 @@ picture {
     margin-top: 150px;
     margin-bottom: 150px;
   --size:20rem;
-  /* --speed: 120s; */
 
 }
 .orbit .center-image {
@@ -165,14 +164,10 @@ picture {
 }
 .orbit .center-image img {
   position:absolute;
-  /* transition: opacity 500ms; */
 }
 .orbit .center-image img:not(:first-child):hover {
   opacity: 100px;
 }
-/* #under img{
-  width:400px;
-} */
 .orbit ul {
   display: grid;
   place-items: center;
@@ -186,7 +181,6 @@ picture {
   animation: orbit var(--speed) linear infinite;
 }
 .orbit li {
-  /* --icon-bg: pink; */
   --text-bg: blue;
   position: absolute;
   width:5rem;
@@ -202,6 +196,11 @@ picture {
 }
 .orbit li:hover{
    border: 1px solid rgb(250,93,0); 
+   
+}
+.orbit ul:hover {
+  animation-play-state: paused;
+  --orbit-play-state: paused;
 }
 .orbit li img{
   width:60%;
@@ -258,3 +257,19 @@ picture {
   transform: translate(10rem, -10rem);
 }
 /* ------------------------------------------------------------- */
+
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
+  }
+}
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
+  }
+}
+@keyframes throb {
+  100% {
+    scale: 1.05;
+  }
+}
