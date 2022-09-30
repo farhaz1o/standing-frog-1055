@@ -1,0 +1,96 @@
+*{
+    margin: 00;
+    padding: 00;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8f1;
+}
+
+
+#welecome_div{
+    height: auto;
+    width: 512px;
+    margin: auto;
+    height: auto;
+}
+#logo{
+    height: 90px;
+    margin-left: 10px;
+}
+#headiin{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+.subhead{
+    color: #737778;
+    margin-top: 10px;
+    font-size: 17px
+}
+#boldtah{
+    color: #2f302d;
+    margin: 0px;
+}
+#selectsize{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: 0.5px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 8px;
+    margin-top: 10px;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: 0.5px solid black;
+    color: white;
+    border-radius: 5px;
+    background-color:#1fa841 ;
+}
+button:hover{
+    background-color:#0e3819 ;
+}
+
+#cont{
+    height: auto;
+}
+.emailin{
+    width: 96%;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.tickbox{
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+.tictick{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: 100 ;
+}
+#nexttowlcom{
+    margin-top: 10px;
+}
+
+#skip{
+    margin-left: 36%;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/time.css" />
+    <link rel="stylesheet" href="./styles/post_nav.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="sub_nav">
+        <div class="path2">
+          <a href="./time.html"><h4 class="nav_ele" id="nav_Time">Time</h4></a>
+          <a href="./expenses.html">
+            <h4 class="nav_ele" id="nav_Expenses">Expenses</h4></a
+          >
+          <a href="./project.html">
+            <h4 class="nav_ele" id="nav_Projects">Projects</h4></a
+          >
+          <a href=""> <h4 class="nav_ele" id="nav_Reports">Reports</h4></a>
+          <a href="./manage.html">
+            <h4 class="nav_ele" id="nav_Reports">Manage</h4></a
+          >
+        </div>
+        <div class="path">
+          <select>
+            <option>Profile</option>
+            <option id="logout">Logout</option>
+          </select>
+          <img
+            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+            alt=""
+            id="profilpic"
+          />
+          <h4 class="nav_ele4">Raman</h4>
+        </div>
+      </div>
+    </div>
+
+    <div id="smaln">
+      <div>
+        <a class="mol" href="">Timesheet</a>
+        <a href="">Pending Approval</a>
+        <a href="">Unsubmitted</a>
+        <a href="">Approved</a>
+      </div>
+    </div>
+    <div id="track">
+      <div id="t1">
+        <div>
+          <button class="bt1"><i class="fa">&#xf177;</i></button>
+          <button class="bt2"><i class="fa">&#xf178;</i></button>
+          <h1 id="sf"></h1>
+        </div>
+
+        <div>
+          <form>
+            <div class="sd-container">
+              <input class="sd" type="date" name="selected_date" />
+              <span class="open-button">
+                <button type="button"><i class="fa fa-calendar"></i></button>
+              </span>
+            </div>
+          </form>
+          <button class="bt1 kk">Date</button>
+          <button class="bt2">Week</button>
+        </div>
+      </div>
+      <button onclick="added()" id="add"><i class="fa fa-plus"></i></button>
+      <div id="fom"></div>
+
+      <div class="lop">
+        <div>
+          <div></div>
+          <div>
+            <button>Mon</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Tue</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Wed</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Thu</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Fri</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Sat</button>
+            <p class="mon">0:00</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p class="w">Week time</p>
+            <p class="clock"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tas">
+        <div>
+          <p class="hard"></p>
+          <p class="small"></p>
+        </div>
+        <div>
+          <p class="har hard">0:00</p>
+          <button class="timerr">🕑 Start</button>
+          <button onclick="pl()">Edit</button>
+        </div>
+      </div>
+      <div id="tt"></div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/test.js" type="module"></script>
