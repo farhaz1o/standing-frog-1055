@@ -27,8 +27,8 @@ let obj={
     checkbox,
     amount,
 };
-Arr.push(obj);
-console.log(obj)
+// Arr.push(obj);
+// console.log(obj)
 
 let res=await fetch(`$base_url`,{
     method:"POST",
@@ -39,5 +39,5 @@ let res=await fetch(`$base_url`,{
     
 })
 res=await res.json();
-
+console.log(res)
 }
