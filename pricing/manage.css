@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#navbar{
+    border: 1px solid red;
+    height: 50px;
+}
+
+#main{
+    width: 55%;
+    margin:30px auto;
+}
+
+#alertBox{
+    display: none;
+}
+#alert{
+    border: 1px solid green;
+    width: 100%;
+    height: 55px;
+    margin: 30px 0px 20px 0px;
+    background-color: #daefdc;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 17px;
+    border:0px
+}
+#dismiss{
+    color: blue;
+    text-decoration-line: underline;
+}
+
+#add_btns{
+    margin: 20px 0px;
+}
+#add_btns>button{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: white;
+}
+
+#search{
+    width: 320px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+#mainContainer{
+    margin: 20px 0px;
+}
+#mainContainer>#clientCont{
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: #efefef;
+}
+#mainContainer>#clientCont>#client{
+    display: flex;
+    justify-content: space-between;
+}
+#mainContainer>#clientCont>#client>div{
+    width: 25%;
+    display: flex;
+    gap: 20px;
+}
+#client button{
+    height: 30px;
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#mainContainer1>#clientCont{
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #efefef;
+}
+#mainContainer1>#clientCont>#client{
+    display: flex;
+    justify-content: space-between;
+}
+#mainContainer1>#clientCont>#client>div{
+    width: 25%;
+    display: flex;
+    gap: 20px;
+}
+#client button{
+    height: 30px;
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}

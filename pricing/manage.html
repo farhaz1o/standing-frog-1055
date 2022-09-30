@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/793365a31d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="manage.css" />
+    <link rel="stylesheet" href="bottom.css" />
+    <link rel="stylesheet" href="../styles/post_nav.css" />
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <div id="main">
+      <div id="alertBox">
+        <div id="alert">
+            <p></p>
+            <p id="dismiss" style="cursor: pointer;">Dismiss</p>
+        </div>
+      </div>
+      <h1>Clients</h1>
+      <div id="add_btns">
+        <button onclick="myfun()" id="newClient" style="background-color: green; color: white">
+            <i class="fa-solid fa-plus"></i> New client
+        </button>
+        <button id="addContact"><i class="fa-solid fa-plus"></i> Add contact</button>
+        <button>Import/Export <i class="fa-solid fa-chevron-down"></i></button>
+      </div>
+      <div><input 
+        type="text"
+        id="search"
+        placeholder="Filter by client or contact"
+      /></div>
+
+      <div id="mainContainer">
+        <div id="clientCont">
+          <div id="client">
+            <div>
+              <button>Edit</button>
+              <h4>Example client</h4>
+            </div>
+            <button>+ Add contact</button>
+          </div>
+          <div id="contact"></div>
+        </div>
+        <div id="mainContainer1"></div>
+      </div>
+    </div>
+
+    <div id="bottom">
+       <div id="bottom-1">
+            <span>You have 29 days left in your free trial.</span>
+            <button>Upgrade</button>
+        </div>
+        <div id="bottom-2">
+            <img src="https://raw.githubusercontent.com/shovampo/standing-frog-1055/main/logo.png" alt="">
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Status</p>
+            <p>Blog</p>
+            <p>Help</p>
+        </div> 
+    </div> 
+  </body>
+</html>
+<script src="manage.js"></script>

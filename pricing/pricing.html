@@ -56,9 +56,10 @@ margin-left: 300px;
        #img1{
 width: 90%;
 margin-top: 35px;
-border: 1px solid orangered;
+border: 1px dotted orangered;
 height: 80px;
 padding: 25px;
+border-radius: 10px;
        }
        #container2{
       display: grid;
@@ -85,11 +86,12 @@ padding: 25px;
     margin-top: 50px;
        }
        #con3>div{
-        border: 1px solid red;
+        border: 1px dotted red;
         width: 30%;
         height: 150px;
         display: flex;
         color: black;
+        border-radius: 10px;
        }
 
        .accordion {
@@ -97,10 +99,10 @@ padding: 25px;
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 80%;
   text-align: left;
   transition: 0.4s;
-  border: 1px solid wheat;
+  border: 1px solid rgb(247, 226, 187);
   outline: none;
   font-size: 15px;
   transition: 0.4s;
@@ -115,6 +117,8 @@ padding: 25px;
   display: none;
   background-color:#fff8f1 ;
   overflow: hidden;
+  width: 80%;
+  margin: auto;
 }
 #con7{
 display:grid;
@@ -125,6 +129,66 @@ text-align: center;
 #con7>div:nth-child(1){
 width: 40%;
 }
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+  margin-top: 12px;
+}
+
+switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: orangered;
+}
+
+input:focus + .slider {
+  box-shadow: orangered;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
     </style>
 </head>
 <body>
@@ -133,6 +197,10 @@ width: 40%;
         <!-- Default checked -->
         <div id="text">
         <p>Monthly</p>
+        <label id="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
         <p>Annual</p>
 </div>
 <p>Save 10% with annual plan</p>
@@ -160,7 +228,7 @@ width: 40%;
               <p>Unlimited Project</p>
           </div>
           <div>
-              <h2>$12</h2>
+              <h2 id="annual">$12</h2>
               <p>per seat per month</p>
           </div>
         </div>
@@ -168,6 +236,8 @@ width: 40%;
         <p>No credit card required.</p>
     </div>
     </div>
+    <p style="color: orangered;margin-top: 50px;">70,000+ companies track time with Harvest
+    </p>
       <img id="img1" src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/Test-3001-free-trial-spz-baseline/social-proofs_2x.png">
       <div id="container2">
       <div>
@@ -308,22 +378,6 @@ width: 40%;
 </div>
 </div>
 </div>
-
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-  </script>
 </body>
 </html>
+<script src="pricing.js"></script>
