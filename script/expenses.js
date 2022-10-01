@@ -75,8 +75,8 @@ let displayExpense = (data) => {
     };
     let b2 = document.createElement("button");
     b2.innerText = "Delete";
-    b2.onclick = () => {
-      deleteExpense(index);
+    b2.onclick = function() {
+      deleteExpense(index,ele);
     };
 
     let hr = document.createElement("hr");
@@ -88,12 +88,9 @@ let displayExpense = (data) => {
   document.querySelector("#total").innerHTML = `Total: <b> $ ${total}</b>`;
 };
 
-let deleteExpense = (index) => {
-  console.log(index)
-  let expenses = JSON.parse(localStorage.getItem("expenses"));
-  let data = expenses.splice(index,1);
-  localStorage.setItem("expenses", JSON.stringify(data));
-  // displayExpense(data);
+let deleteExpense = (index,el) => {
+  expenses.splice(index,1);
+  localStorage.setItem("expenses", JSON.stringify(expenses));
   displayExpense(expenses)
 };
 
