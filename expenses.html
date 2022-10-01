@@ -1,63 +1,107 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>expenses</title>
+    <title>Document</title>
+    <!-- <script src="https://kit.fontawesome.com/793365a31d.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="./style/expenses.css">
-
+    <!-- <link rel="stylesheet" href="./components/bottom.css">
+         <link rel="stylesheet" href="./style/post_nav.css"> -->
 </head>
-
 <body>
+    <nav id="navbar"></nav>
     <div id="main">
-        <div id="container">
-            <div id="header">
-                <h1>Expenses</h1>
-                <div>
-                    <button class="expbtn" id="ebtn">+ Track expenses</button>
+        <h1>Expenses</h1>
+        <div id="trackExp">
+            <button id="track" style="background-color: green; color:white;"><b><i class="fa-solid fa-plus"></i> Track expenses</b></button>
+            <button id="team" style="background-color: white; color:black;"><b>Teammates <i class="fa-solid fa-chevron-down"></i></b>  </button>
+        </div>
+        <div id="teammates">
+            <!-- <input type="search" placeholder="Search...">
+            <div>
+                <p>a@gamil.com</p>
+                <p>b@gamil.com</p>
+                <p>c@gamil.com</p>
+                <p>d@gamil.com</p>
+            </div> -->
+        </div>
+        <div id="expensesForm">
+            <div>
+                <div style="width:15% ;">
+                    <h4>Date</h4>
+                    <input type="date" id="date">
                 </div>
-            </div>
-            <!-- form -->
-            <div id="fcontainer">
-                <!-- date -->
-                <div id="date">
-                    <h2>Date</h2>
-                    <input type="date" id="Date">
-                </div>
-                <!-- formdata -->
-                <form action>
-                    <h2>Project / Category</h2>
-                    <select name="" id="project">
-                        <option value="" selected disabled>choose a project...</option>
-                        <option value="Demo project">Demo Project</option>
+                <div style="width:65% ;">
+                    <h4>Project / Category</h4>
+                    <select name="" id="chooseProject">
+                        <option value="">Choose a project...</option>
+                        <option value="standing frog">standing frog</option>
+                        <option id="olo" value="standing frog"></option>
                     </select>
                     <select name="" id="category">
-                        <option value="" selected disabled>choose a category...</option>
-                        <option value="e-commerce">E-Commerce</option>
-                    </select>
-                    <input type="text" id="note">
-                    <input type="file" id="file">
-                    <input type="checkbox" id="term" name="term" value="true">
-                    <label for="term">This expense is Billable</label>
-                    <span><button class="expbtn" id="s_expence">save expence</button></span>
-                    <span><button id="cancel">cancel</button></span>
-                </form>
-                <div id="amount">
-                    <h2>Amount</h2>
-                    <input type="text area" id="tamount">
+                        <option value="">Choose a category...</option>
+                        <option value="Entertainment ">Entertainment</option>
+                        <option value="Lodging">Lodging</option>
+                        <option value="Meal">Meal</option>
+                        <option value="Mileage">Mileage</option>
+                        <option value="Other">Other</option>
+                        <option value="Transportation">Transportation</option>
+                    </select><br>
+                    <input type="text" placeholder="Notes (Optional)" id="notes"><br>
+                    <div style="border: 1px dotted; 
+                                height: 40px; 
+                                margin: 5px 5px 10px 5px;
+                                border-radius: 5px;
+                                background-color: rgb(243, 240, 240); ">Attach receipt</div>
+
+                    <input type="checkbox" style="width: 20px;" id="checkbox">
+                    <label id="ok" for="checkbox">This expense is billable</label><br><br>
+            
+                    <button style="background-color: green; color:white;" id="saveExp_btn">Save expense</button>
+                    <button style="background-color: white; color:black; border: 1px solid grey;" id="cancel_btn">Cancel</button>
                 </div>
-            </div>
-            <!-- expence table -->
-            <div id="content">
-                <div id="excontent">
-                    <img src="https://cache.harvestapp.com/static/illustrations/expense_onboard-AAC9C67E.png" alt="">
+                <div style="width:20% ;">
+                    <h4>Amount</h4>
+                    <input type="number" placeholder="$" id="amount" style="height: 80px; font-size: 20px; padding: 5px;">
                 </div>
             </div>
         </div>
+
+        <div id="addedExp">
+            <hr>
+            <div>
+                <h4>22 - 02 Sep 2022</h4>
+                <a href="#">Submit for approval</a>
+            </div>
+            <hr>
+            <div id="container">
+                <!-- <div id="box">
+                    <div>date</div>
+                    <div>
+                       <h4>project</h4>
+                       <p>category</p>
+                       <p>notes</p>
+                    </div>
+                    <h4>expense</h4>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <hr> -->
+            </div>
+            <div id="total">Total</div>
+        </div>
+    </div>
+
+    <div id="bottom">
+       
     </div>
 </body>
-
 </html>
-<script src="./script/expenses.js"></script>
+<!-- <script>
+    let a=JSON.parse(localStorage.getItem("harvestlogin"));
+    document.getElementById("olo").innerText=a.data[0].project
+
+</script> -->
+<script src="./script/expenses.js"type="module"></script>
+<!-- <script src="/script/test.js" type="module"></script> -->
