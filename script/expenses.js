@@ -94,7 +94,7 @@ let deleteExpense = (index) => {
   let data = expenses.splice(index,1);
   localStorage.setItem("expenses", JSON.stringify(data));
   // displayExpense(data);
-  displayExpense(data)
+  displayExpense(expenses)
 };
 
 // let teammates=JSON.parse(localStorage.getItem("harvestlogin"));
