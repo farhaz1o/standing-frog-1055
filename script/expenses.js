@@ -42,6 +42,12 @@ saveExp_btn.onclick = () => {
   localStorage.setItem("expenses", JSON.stringify(expenses));
   console.log(expenses);
   displayExpense(expenses);
+
+  document.querySelector("#date").value=null;
+  document.querySelector("#chooseProject").value=null;
+  document.querySelector("#category").value=null;
+  document.querySelector("#notes").value=null;
+  document.querySelector("#amount").value=null;
 };
 
 let displayExpense = (data) => {
