@@ -165,6 +165,7 @@ picture {
 .orbit .center-image img {
   position:absolute;
 }
+
 .orbit .center-image img:not(:first-child):hover {
   opacity: 100px;
 }
@@ -231,21 +232,25 @@ picture {
   --text-bg: var(--pink-dark);
   transform: translate(0, 15rem);
 }
+
 .orbit li:nth-child(4) {
   --icon-bg: var(--red-light);
   --text-bg: var(--red-dark);
   transform: translate(-10rem, 10rem);
 }
+
 .orbit li:nth-child(5) {
   --icon-bg: var(--brown-light);
   --text-bg: var(--brown-dark);
   transform: translate(-15rem, 0rem);
 }
+
 .orbit li:nth-child(6) {
   --icon-bg: var(--yellow-light);
   --text-bg: var(--yellow-dark);
   transform: translate(-10rem, -10rem);
 }
+
 .orbit li:nth-child(7) {
   --icon-bg: var(--purple-light);
   --text-bg: var(--purple-dark);
@@ -273,3 +278,4 @@ picture {
     scale: 1.05;
   }
 }
+

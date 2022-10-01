@@ -1,4 +1,5 @@
 let data=[
+
     {
        i:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/asana.png?width=200&name=asana.png",
        t:"Asana",
@@ -324,4 +325,5 @@ let data=[
          }
       })
       appendData(copyData);
+      
    }
