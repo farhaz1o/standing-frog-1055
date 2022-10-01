@@ -1,12 +1,223 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project</title>
+    <title>Project2 Page</title>
+    <link rel="stylesheet" href="./styles/post_nav.css">
+    <style>
+        #wholeOuterBody {
+            border: 1px solid gray;
+            height: 1000px;
+        }
+
+        .pageBody {
+            /* border: 1px solid red; */
+            width: 96%;
+            margin: auto;
+            margin-top: 20px;
+            /* height: 80px; */
+        }
+
+        #newProjectBtn {
+            padding: 10px 30px;
+            margin-top: 17px;
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            background-color: green;
+            border-radius: 10px;
+        }
+
+        #proTitle {
+            font-size: 40px;
+            font-family: sans-serif;
+            /* font-weight: 100px; */
+        }
+
+        #belowHeader {
+            /* border: 1px solid teal; */
+            width: 96%;
+            margin: auto;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #activePro>select {
+            font-size: larger;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+
+        #filterProject>select {
+            font-size: larger;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+
+        .tableRowList {
+            border: 5px solid hotpink;
+            /* width: 346%; */
+            /* gap: 50px;
+           display: flex;
+           justify-content: space-around;
+           color: gray;
+           font-size: 18px; */
+            background-color: #1d1e1c12;
+            color: #1d1e1cb3;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 2;
+            margin: auto;
+            text-align: center;
+            /* padding: 50px;
+            display: table-row; */
+        }
+        .tableRowList>th{
+            padding: 20px 63px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="navbar"></div>
+    <div id="wholeOuterBody">
+
+        <div class="pageBody">
+            <button onclick="lkl()" id="newProjectBtn">+ New Project</button>
+        </div>
+        <div class="pageBody">
+            <h1 id="proTitle">Projects</h1>
+        </div>
+        <div id="belowHeader">
+            <div id="activePro">
+                <select name="" id="">
+                    <option value="">Active Projects</option>
+                    <option value="">Budget Projects</option>
+                    <option value="">Archived Projects</option>
+                </select>
+            </div>
+            <div id="filterProject">
+                <select name="" id="">
+                    <option value="">Filter By Client</option>
+                </select>
+                <select name="" id="">
+                    <option value="">Filter By Manager</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="pageBody">
+            <table>
+                <thead>
+                    <tr class="tableRowList">
+
+                        <th>Client</th>
+                        <th>Project Name</th>
+                        <th>Budget</th>
+                        <th>Spent</th>
+                        <th>Progress</th>
+                        <th>Remaining</th>
+                        <th>Costs</th>
+                    </tr>
+                </thead>
+
+                <tbody id="sgTableContainer">
+
+                    <tr class="tableRowList">
+                       
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
+<script>
+    let data = [
+        {
+            client: "Suraj Gundle",
+            name: "abcInfotech",
+            budget: 500,
+            spent: 300,
+            progress: 80,
+            remaining: 100,
+            costs: 0.00,
+        },
+        {
+            client: "Shubham Gundle",
+            name: "abcInfotech",
+            budget: 500,
+            spent: 300,
+            progress: 80,
+            remaining: 100,
+            costs: 0.00,
+        },
+        {
+            client: "Prasad Gundle",
+            name: "abcInfotech",
+            budget: 500,
+            spent: 300,
+            progress: 80,
+            remaining: 100,
+            costs: 0.00,
+        }
+    ]
+
+    localStorage.setItem("proInfo", JSON.stringify(data))
+    let ld = JSON.parse(localStorage.getItem("harvestlogin")) || []
+   console.log(ld)
+    let container = document.getElementById("sgTableContainer")
+    container.innerHTML = null;
+let harv=ld.data;
+
+harv.map((el)=>{
+        let client_name = document.createElement("td")
+        client_name.innerText =el.client
+        let nam = document.createElement("td")
+        nam.innerText = el.project;
+        let bud = document.createElement("td")
+        bud.innerText =el.budget;
+        let val2=+el.budget;
+        
+        let spen = document.createElement("td")
+        let val=Math.floor(Math.random() * 11+2)
+        spen.innerText = `$${val}`;
+        let prog = document.createElement("td")
+    
+        let proggressVal=Math.floor(val/(val2)*100);
+        
+        prog.innerText =`${proggressVal}%`;
+        let remai = document.createElement("td")
+        let val3=(100-proggressVal)
+        val3=val3.toFixed(2)
+        
+        remai.innerText =`${val3}%` ;
+        let cost = document.createElement("td")
+        // cost.innerText = costs;
+        cost.innerText=`$${Math.floor(Math.random() * 100)}`;;
+
+        let tr = document.createElement("tr")
+        tr.setAttribute("class", "tableRowList")
+        tr.append(client_name, nam, bud, spen,prog,remai, cost)
+        container.append(tr)
+})
+
+let lkl=()=>{
+    window.location.href="./createfirstproject.html"
+}
+
+
+</script>
+<script src="./scripts/test.js" type="module"></script>
