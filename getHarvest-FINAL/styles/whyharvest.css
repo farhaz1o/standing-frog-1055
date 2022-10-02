@@ -1,0 +1,683 @@
+#helpTeam {
+    background-image: url(https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-spike-bottom-right.jpg);
+    background-position: calc(50% + 340px) bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-size: 687px 410px;
+  }
+  #helpTeam{
+    margin-top: -60px;
+  }
+  
+  #helpTeam_container {
+    margin-left: 10%;
+    width: 60%;
+  }
+  
+  .helpTeam_text {
+    align-items: center;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-top: 60px;
+    width: 50%;
+  }
+  
+  .helpTeam_text > h1 {
+    color: #252424;
+    font-size: 43px;
+    font-weight: 300;
+    padding-top: 60px;
+    white-space: nowrap;
+  }
+  
+  .helpTeam_text > p {
+    color: #424141;
+    font-size: 28px;
+    font-weight: 300;
+    padding-top: 60px;
+  }
+  #helpTeam_btnContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 50%;
+    gap: 20px;
+  }
+  
+  #helpTeam_btnContainer > p {
+    color: gray;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 1.1px;
+    white-space: nowrap;
+  }
+  
+  #helpTeam_btn {
+    background-color: #fc6a15;
+    border-radius: 0.95rem;
+    box-shadow: 0 1px 2px 0 rgb(80 84 87 / 30%), 0 2px 6px 2px rgb(80 85 88 / 15%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    width: 220px;
+  }
+  
+  .helpTeamLine {
+    background-color: #fa5d00;
+    height: 1px;
+    margin-top: 90px;
+  }
+  
+  #insightTab {
+    margin: 80px auto;
+    width: 80%;
+  }
+  
+  #insightTab_content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #insightTab_contentLeft {
+    width: 50%;
+  }
+  
+  #insightTab_contentLeft > button {
+    background-color: #000;
+    border-radius: 0.95rem;
+    color: #fff;
+    font-size: 1.25rem;
+    height: 50px;
+    margin-top: 25px;
+    width: 220px;
+  }
+  
+  #insightTab_contentLeft > h4 {
+    font-size: 36px;
+    line-height: 50px;
+    width: 500px;
+    font-weight: 400;
+  }
+  
+  #insightTab_contentLeft > p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .insightTab_pt > p {
+    font-size: 1.25rem;
+    font-weight: 450;
+    width: 600px;
+  }
+  
+  .insightTab_pt {
+    background-image: url(//19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/icons/icon-checklist.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 1rem;
+    padding-left: 35px;
+  }
+  
+  .insightTab_backgroundContent {
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .insightTabLine {
+    background-color: #fa5d00;
+    height: 1px;
+    margin-top: 90px;
+  }
+  
+  .timeTab {
+    margin: 80px auto;
+    width: 80%;
+  }
+  
+  .timeTab_content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .timeTab_contentLeft {
+    text-align: center;
+  }
+  
+  .timeTab_contentLeft:nth-child(2) {
+    margin: 25px 0;
+  }
+  
+  .timeTab_contentRight {
+    width: 50%;
+  }
+  
+  .timeTab_contentRight > h4 {
+    font-size: 36px;
+    line-height: 50px;
+    width: 500px;
+    font-weight: 400;
+  }
+  
+  .timeTab_contentRight > p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .timeTab_contentRight:nth-child(2) {
+    margin: 25px 0;
+  }
+  
+  .timeTab_contentLeft > p {
+    font-size: 1.25rem;
+    font-weight: 450;
+    width: 600px;
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .timeTab_pt > p {
+    font-size: 1.25rem;
+    font-weight: 450;
+    width: 600px;
+  }
+  
+  .timeTab_pt {
+    background-image: url(//19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/icons/icon-checklist.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 1rem;
+    padding-left: 35px;
+  }
+  
+  .timeTabLine {
+    background-color: #fa5d00;
+    height: 1px;
+    margin-top: 90px;
+  }
+  
+  .timeTab_contentRight > p {
+    margin-top: 20px;
+  }
+  
+  .timeTab_contentRight > button {
+    background-color: #000;
+    border-radius: 0.95rem;
+    color: #fff;
+    font-size: 1.25rem;
+    height: 50px;
+    margin-top: 25px;
+    width: 220px;
+  }
+  
+  .trackTab {
+    margin: 80px auto;
+    width: 80%;
+  }
+  
+  .trackTab_content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .trackTab_contentLeft {
+    width: 50%;
+  }
+  
+  .trackTab_contentLeft > h4 {
+    font-size: 36px;
+    line-height: 50px;
+    width: 500px;
+    font-weight: 400;
+  }
+  
+  .trackTab_contentLeft > p {
+    font-size: 20px;
+    font-weight: 450;
+    width: 600px;
+    margin-top: 20px;
+  }
+  
+  .trackTab_pt {
+    background-image: url(//19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/icons/icon-checklist.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 1rem;
+    padding-left: 35px;
+  }
+  
+  .trackTab_contentLeft > button {
+    background-color: #000;
+    border-radius: 0.95rem;
+    color: #fff;
+    font-size: 1.25rem;
+    height: 50px;
+    margin-top: 25px;
+    width: 220px;
+  }
+  
+  .trackTab_backgroundContent {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .trackTab_backgroundContent > p {
+    margin-top: 20px;
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .trackTabLine {
+    background-color: #fa5d00;
+    height: 1px;
+    margin-top: 90px;
+  }
+  
+  .teamTab {
+    margin: 80px auto;
+    width: 80%;
+  }
+  
+  .teamTab_content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .teamTab_ContentLeft {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .teamTab_ContentLeft > p {
+    font-size: 1.25rem;
+    font-weight: 450;
+    width: 600px;
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .teamTab_contentRight:nth-child(2) {
+    margin: 25px 0;
+  }
+  
+  .teamTab_contentRight {
+    width: 50%;
+  }
+  
+  .teamTab_contentRight > h4 {
+    font-size: 36px;
+    line-height: 50px;
+    width: 500px;
+    font-weight: 400;
+  }
+  
+  .teamTab_contentRight > p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .teamTab_pt {
+    background-image: url(//19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/icons/icon-checklist.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 1rem;
+    padding-left: 35px;
+  }
+  
+  .teamTab_contentRight > button {
+    background-color: #000;
+    border-radius: 0.95rem;
+    color: #fff;
+    font-size: 1.25rem;
+    height: 50px;
+    margin-top: 25px;
+    width: 220px;
+  }
+  
+  .teamTabLine {
+    background-color: #fa5d00;
+    height: 1px;
+    margin-top: 90px;
+  }
+  
+  .logoTab {
+    width: 90%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 1rem auto auto;
+    padding-bottom: 5rem;
+  }
+  
+  .logo_css_start {
+    display: flex;
+    margin: auto;
+  }
+  
+  .logo_img {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 2rem;
+    opacity: 0.2;
+  }
+  
+  .logo_css_end {
+    background-color: #fa5d00;
+    height: 1px;
+    margin-top: 70px;
+    width: 100%;
+  }
+  
+  .endTab {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    line-height: 7vh;
+    padding: 13.5vh 10vw;
+  }
+  
+  .endTab_content > h4 {
+      font-size: 36px;
+      line-height: 50px;
+      width: 500px;
+      font-weight: 400;
+  }
+  
+  .endTab_content > p {
+  font-size: 20px;
+  }
+  
+  .endTab_content {
+    width: 50%;
+  }
+  
+  /* @media only screen and (max-width: 1250px) {
+    .endTab,
+    .endTab_content {
+      flex-direction: column-reverse;
+      gap: 5vh;
+    }
+  }
+  @media only screen and (max-width: 1550px) {
+    .endTab_content > div,
+    .endTab_content > p {
+      margin-top: 5vh;
+    }
+    .endTab_content > p {
+      font-size: 2vw;
+      margin-top: 20px;
+    }
+  } */
+  
+  .harvest_btn {
+    background-color: #fc6a15;
+    border-radius: 0.95rem;
+    box-shadow: 0 1px 2px 0 rgb(80 84 87 / 30%), 0 2px 6px 2px rgb(80 85 88 / 15%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    width: 220px;
+  }
+  
+  .endTab_text {
+    color: #424141;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  body,
+  blockquote,
+  dl,
+  dd,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  figure,
+  p,
+  pre {
+    margin: 0px;
+  }
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    padding: 0px;
+    line-height: inherit;
+    color: inherit;
+  }
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+  
+  button {
+    background: transparent;
+    padding: 0px;
+  }
+  
+  button,
+  select {
+    text-transform: none;
+  }
+  
+  button,
+  input {
+    overflow: visible;
+  }
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+  }
+  *,
+  ::before,
+  ::after {
+    border-color: var(--chakra-colors-chakra-border-color);
+    overflow-wrap: break-word;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  
+  
+  div {
+    display: block;
+  }
+  
+  body {
+    font-family: var(--chakra-fonts-body);
+    color: var(--chakra-colors-chakra-body-text);
+    background: var(--chakra-colors-chakra-body-bg);
+    transition-property: background-color;
+    transition-duration: var(--chakra-transition-duration-normal);
+    line-height: var(--chakra-lineHeights-base);
+  }
+  
+  body {
+    position: relative;
+    min-height: 100%;
+    font-feature-settings: "kern";
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0;
+  }
+  
+  style attribute {
+    color-scheme: light;
+  }
+  
+  :host,
+  :root,
+  [data-theme] {
+    --chakra-ring-inset: var(--chakra-empty);
+    --chakra-ring-offset-width: 0px;
+    --chakra-ring-offset-color: #fff;
+    --chakra-ring-color: rgba(66, 153, 225, 0.6);
+    --chakra-ring-offset-shadow: 0 0 #0000;
+    --chakra-ring-shadow: 0 0 #0000;
+    --chakra-space-x-reverse: 0;
+    --chakra-space-y-reverse: 0;
+    --chakra-colors-transparent: transparent;
+    --chakra-colors-current: currentColor;
+    --chakra-colors-black: #000000;
+    --chakra-colors-white: #ffffff;
+    --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+    --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+    --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+    --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+    --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+    --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+    --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+    --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+    --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.8);
+    --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+    --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+    --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+    --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+    --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+    --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+    --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+    --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+    --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+    --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.8);
+    --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+    --chakra-colors-gray-50: #f7fafc;
+    --chakra-colors-gray-100: #edf2f7;
+    --chakra-colors-gray-200: #e2e8f0;
+    --chakra-colors-gray-300: #cbd5e0;
+    --chakra-colors-gray-400: #a0aec0;
+    --chakra-colors-gray-500: #718096;
+    --chakra-colors-gray-600: #4a5568;
+    --chakra-colors-gray-700: #2d3748;
+    --chakra-colors-gray-800: #1a202c;
+    --chakra-colors-gray-900: #171923;
+    --chakra-colors-red-50: #fff5f5;
+    --chakra-colors-red-100: #fed7d7;
+    --chakra-colors-red-200: #feb2b2;
+    --chakra-colors-red-300: #fc8181;
+    --chakra-colors-red-400: #f56565;
+    --chakra-colors-red-500: #e53e3e;
+    --chakra-colors-red-600: #c53030;
+    --chakra-colors-red-700: #9b2c2c;
+  }
+  
+  html {
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    font-family: system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    touch-action: manipulation;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-color: var(--chakra-colors-chakra-border-color);
+    overflow-wrap: break-word;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-color: var(--chakra-colors-chakra-border-color);
+    overflow-wrap: break-word;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+  img,
+  svg,
+  video,
+  canvas,
+  audio,
+  iframe,
+  embed,
+  object {
+    display: block;
+  }
+  
+  img {
+    border-style: none;
+  }
+  
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }

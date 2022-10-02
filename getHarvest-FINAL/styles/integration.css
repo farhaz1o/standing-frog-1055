@@ -1,0 +1,275 @@
+#upper{
+    display: flex;
+    margin: auto;
+}
+#low{
+    width: 50%;
+    margin-left:15%;
+}
+#up{
+    margin-top:15%;
+    width: 50%;
+    margin-left:5%;
+}
+#up h1{
+    font-size:40px; 
+}
+#up p{
+    font-size:xx-large;
+    width:550px;
+}
+#hr{
+    border: 0.5px solid rgb(250,93,0);
+    margin-top:70px;
+    margin-bottom:0px;
+}
+.hr{
+    width:90%;
+}
+#search{
+    padding:20px 5%;
+    height: 70px;
+    width: 80%;
+    border-radius: 20px;
+    font-size: larger;
+    font: bold;
+    margin: auto;
+    margin:80px 10% 40px 10%;
+}
+body{
+    background-color: rgb(255,248,241);
+}
+#up2{
+    display: flex;
+    width: 80%;    
+}
+#container{
+    width:60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:60px;
+}
+#btn{
+    width:30%;
+    text-align: center;
+    margin-left:70px;
+    margin-top: -30px;
+}
+#btn h3{
+    /* margin-top:60px; */
+    margin-left:20px;
+    text-align: left;
+    margin: 50px;
+    
+}
+#btn h3:hover{
+    width:200px;
+    padding:10px 10px;
+    background-color: rgb(254,232,216);
+    color:rgb(250,93,0) ;
+    border-radius: 20px;
+}
+#container img{
+    width: 80px;
+}
+#container div{
+    background-color: white;
+    border-radius: 20px;
+    width:250px;
+    height: 250px;
+    padding: 20px;
+}
+#container div:hover{
+    background-color:rgb(254, 243, 232) ;
+}
+#low1{
+    display: flex;
+    gap:50px;
+    margin-top: 70px;
+}
+#first{
+    width: 30%;
+    text-align: center;
+    margin-left:150px;
+}
+#last{
+    width:70%;
+    margin-left:-200px;
+}
+#last button{
+    background-color: black;
+    color: white;
+    border-radius:10px;
+    padding: 10px 40px;
+    font-size: larger;
+    font-weight: bold;
+}
+#last p,#lower>div>div>p{
+    font-size:30px;
+    width: 80%;
+}
+#last h1,#lower h1{
+    font-size:40px; 
+}
+#lower{
+    display: flex;
+    background-color: white;
+}
+#lower>div{
+    margin-left: 40px;
+    margin-top:50px;
+}
+#lower img{
+    margin-top: 50px;
+}
+#lower button{
+    background-color: rgb(250,93,0);
+    color: white;
+    border-radius:10px;
+    padding: 10px 40px;
+    font-size: larger;
+    font-weight: bold;
+    border: 0ch;
+}
+.orbit {
+  --size: 12rem;
+  --speed: 120s;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+} 
+
+.orbit {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  --size:20rem;
+
+}
+.orbit .center-image {
+  width: var(--size);
+  position: relative;
+  z-index: 10;
+}
+.orbit .center-image img {
+  position:absolute;
+}
+.orbit .center-image img:not(:first-child):hover {
+  opacity: 100px;
+}
+.orbit ul {
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  list-style: none;
+  --icon-bg: var(--green-light);
+  --text-bg: var(--green-dark);
+  transform-origin: center;
+  animation: orbit var(--speed) linear infinite;
+}
+.orbit li {
+  --text-bg: blue;
+  position: absolute;
+  width:5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-weight: 500;
+  color: var(--white-light);
+  text-align: center;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgb(172, 172, 172);
+}
+.orbit li:hover{
+   border: 1px solid rgb(250,93,0); 
+   
+}
+.orbit ul:hover {
+  animation-play-state: paused;
+  --orbit-play-state: paused;
+}
+.orbit li img{
+  width:60%;
+  height:60%;
+}
+.orbit li > * {
+  width: 10%;
+  height: 10%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+  animation: orbit var(--speed) linear reverse infinite, throb 1s var(--throb-delay) ease-in-out infinite alternate;
+  animation-play-state: var(--orbit-play-state, running), var(--throb-play-state, running);
+}
+.orbit li:nth-child(1) {
+  --icon-bg: var(--blue-light);
+  --text-bg: var(--blue-dark);
+  transform: translate(15rem, 0rem);
+}
+.orbit li:nth-child(2) {
+  --icon-bg: var(--green-light);
+  --text-bg: var(--green-dark);
+  transform: translate(10rem, 10rem);
+}
+.orbit li:nth-child(3) {
+  --icon-bg: var(--pink-light);
+  --text-bg: var(--pink-dark);
+  transform: translate(0, 15rem);
+}
+.orbit li:nth-child(4) {
+  --icon-bg: var(--red-light);
+  --text-bg: var(--red-dark);
+  transform: translate(-10rem, 10rem);
+}
+.orbit li:nth-child(5) {
+  --icon-bg: var(--brown-light);
+  --text-bg: var(--brown-dark);
+  transform: translate(-15rem, 0rem);
+}
+.orbit li:nth-child(6) {
+  --icon-bg: var(--yellow-light);
+  --text-bg: var(--yellow-dark);
+  transform: translate(-10rem, -10rem);
+}
+.orbit li:nth-child(7) {
+  --icon-bg: var(--purple-light);
+  --text-bg: var(--purple-dark);
+  transform: translate(0, -15rem);
+}
+.orbit li:nth-child(8) {
+  --icon-bg: var(--orange-light);
+  --text-bg: var(--orange-dark);
+  transform: translate(10rem, -10rem);
+}
+/* ------------------------------------------------------------- */
+
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
+  }
+}
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
+  }
+}
+@keyframes throb {
+  100% {
+    scale: 1.05;
+  }
+}

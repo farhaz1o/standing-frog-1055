@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/time.css" />
+    <link rel="stylesheet" href="./styles/nnav.css">
+    <link rel="stylesheet" href="styles/bottom.css" />
+  </head>
+  <body>
+    <div id="nnav">
+  
+    </div>
+
+    <div id="smaln">
+      <div>
+        <a class="mol" href="">Timesheet</a>
+        <a href="">Pending Approval</a>
+        <a href="">Unsubmitted</a>
+        <a href="">Approved</a>
+      </div>
+    </div>
+    <div id="track">
+      <div id="t1">
+        <div>
+          <button class="bt1"><i class="fa">&#xf177;</i></button>
+          <button class="bt2"><i class="fa">&#xf178;</i></button>
+          <h1 id="sf"></h1>
+        </div>
+
+        <div>
+          <form>
+            <div class="sd-container">
+              <input class="sd" type="date" name="selected_date" />
+              <span class="open-button">
+                <button type="button"><i class="fa fa-calendar"></i></button>
+              </span>
+            </div>
+          </form>
+          <button class="bt1 kk">Date</button>
+          <button class="bt2">Week</button>
+        </div>
+      </div>
+      <button onclick="added()" id="add"><i class="fa fa-plus"></i></button>
+      <div id="fom"></div>
+
+      <div class="lop">
+        <div>
+          <div></div>
+          <div>
+            <button>Mon</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Tue</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Wed</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Thu</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Fri</button>
+            <p class="mon">0:00</p>
+          </div>
+          <div>
+            <button>Sat</button>
+            <p class="mon">0:00</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p class="w">Week time</p>
+            <p class="clock"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tas">
+        <div>
+          <p class="hard"></p>
+          <p class="small"></p>
+        </div>
+        <div>
+          <p class="har hard">0:00</p>
+          <button class="timerr">🕑 Start</button>
+          <button onclick="pl()">Edit</button>
+        </div>
+      </div>
+      <div id="tt"></div>
+    </div>
+    <div id="bottom">
+        <div id="bottom-1">
+             <span>You have 29 days left in your free trial.</span>
+             <button>Upgrade</button>
+         </div>
+         <div id="bottom-2">
+             <img src="https://raw.githubusercontent.com/shovampo/standing-frog-1055/main/logo.png" alt="">
+             <p>Terms</p>
+             <p>Privacy</p>
+             <p>Status</p>
+             <p>Blog</p>
+             <p>Help</p>
+         </div> 
+     </div> 
+
+  </body>
+</html>
+<script src="./scripts/test.js" type="module"></script>
+<script type="module">
+    import navbar from './components/nnavbar.js';
+    console.log('navbar:',navbar);
+    
+    let nnav=document.getElementById("nnav");
+    nnav.innerHTML=navbar();
+    
+</script>

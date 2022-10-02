@@ -1,0 +1,192 @@
+/* *{
+    margin:0%;
+    padding:0%;
+}
+body{
+    color: #1d1e1c;
+    font-family: Muoto,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;
+}
+#main{
+    padding: 32px;
+}
+#container{
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#header{
+    margin-bottom: 24px;
+}
+#header h1{
+    
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+#header button{
+    background-color: #188433;
+    color: white;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 15px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+#content{
+    background: rgba(29,30,28,.07);
+    color: #1d1e1cb3;
+    font-size: 17px;
+    text-align: center;
+margin-top: 20px;
+}
+#excontent{
+    padding:50px;
+    display: flex;
+}
+
+/* form */
+/*#fcontainer{
+    background: #fff8f1;
+    border: 1px solid #ffa26c;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input, select{
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#date{
+    width:20%;
+}
+#amount{
+    width:20%;
+}
+#s_expenses{
+    background-color:  #ffa26c;
+    color: white;
+} */
+
+
+#navbar{
+    border: 1px solid red;
+    height: 50px;
+}
+#main{
+    /* border: 1px solid blue; */
+    width: 85%;
+    height: auto;
+    margin:20px auto;
+}
+#trackExp{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+#trackExp>button{
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+#teammates{
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    width: 250px;
+    height: auto;
+    margin-left: 67%;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+#teammates>input{
+    width: 100%;
+    height: 30px;
+}
+#teammates p{
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px;
+}
+#teammates p:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+#expensesForm{
+    border: 1px solid red;
+    height: auto;
+    display: none;
+    background-color: #fff8f1;
+    padding: 10px;
+}
+#expensesForm>div{
+    display:flex;
+}
+#expensesForm>div>div{
+    height: auto;
+    width: 200px;
+    padding: 5px;
+}
+#expensesForm>div input,select{
+    width: 100%;
+    height: 40px;
+    margin: 2px;
+    border-radius: 5px;
+}
+#expensesForm>div button{
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#addedExp{
+    margin-top: 30px;
+    height: auto;
+}
+#addedExp>div:nth-child(2){
+    background-color: rgb(238,238,238);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+#addedExp>div:last-child{
+    margin-left: 48%;
+}
+#addedExp>#container{
+    background-color: #fff1cd;
+}
+#addedExp>#container>#box{
+    /* border: 1px solid red; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#box>button{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+}
+#ok{
+   position: relative;
+   bottom:5%
+}

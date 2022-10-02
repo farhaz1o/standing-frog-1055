@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/793365a31d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/manage.css" />
+    <link rel="stylesheet" href="styles/bottom.css" />
+    <link rel="stylesheet" href="./styles/nnav.css" />
+    <style>
+      .rose{
+     display: flex;
+     margin-top: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: aliceblue;
+     gap: 13px;
+     justify-content: space-between;
+}
+.btns{
+  height: 30px;
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+    </style>
+  </head>
+  <body>
+    <nav id="nnav"></nav>
+    <div id="main">
+      <div id="alertBox">
+        <div id="alert">
+            <p></p>
+            <p id="dismiss" style="cursor: pointer;">Dismiss</p>
+        </div>
+      </div>
+      <h1>Clients</h1>
+      <div id="add_btns">
+        <button onclick="myfun()" id="newClient" style="background-color: green; color: white">
+            <i class="fa-solid fa-plus"></i> New client
+        </button>
+        <button id="addContact"><i class="fa-solid fa-plus"></i> Add contact</button>
+        <button>Import/Export <i class="fa-solid fa-chevron-down"></i></button>
+      </div>
+      
+
+      <div id="mainContainer">
+        <div id="clientCont">
+          <div id="client">
+            <div>
+              <button style="margin-top:15px">Edit</button>
+              <h4 style="margin-left:285px">Eg.Client</h4>
+            </div>
+             <button style="margin-left:300px ;margin-top:15px">+Add contact</button>
+          </div>
+          <div id="contact"></div>
+        </div>
+        <div id="mainContainer1"></div>
+      </div>
+    </div>
+  <div id="user"></div>
+    <div id="bottom">
+       <div id="bottom-1">
+            <span>You have 29 days left in your free trial.</span>
+            <button>Upgrade</button>
+        </div>
+        <div id="bottom-2">
+            <img src="https://raw.githubusercontent.com/shovampo/standing-frog-1055/main/logo.png" alt="">
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Status</p>
+            <p>Blog</p>
+            <p>Help</p>
+        </div> 
+    </div> 
+  </body>
+</html>
+<script src="./scripts/manage.js"></script>
+<script type="module">
+  import navbar from './components/nnavbar.js';
+  console.log('navbar:',navbar);
+  
+  let nnav=document.getElementById("nnav");
+  nnav.innerHTML=navbar();
+  
+</script>

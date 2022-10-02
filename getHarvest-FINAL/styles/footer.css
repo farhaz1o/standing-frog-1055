@@ -1,0 +1,107 @@
+#footer_container{
+    width: 100%;
+    height: 650px;
+    background-color: #1d1e1c ;
+    margin-top: -60px;
+}
+#footbox1{
+    display: flex;
+    padding-top: 70px;
+    width:90%;
+    height:350px;
+    margin: auto;
+    margin-top: 100px;
+}
+#footlogo{
+   
+    width: 30%;
+
+}
+#footimg{
+    width: 65%;
+    margin-top: -33px;
+}
+#footh{
+
+    width:20%;
+    margin-left: 105px;
+    
+
+
+
+}
+#footc{
+  
+    width:20%;
+    margin-left: 30px;
+
+}
+#footcomp{
+  
+    width:20%;
+    margin-left: 100px;
+
+}
+.foothh{
+    font-size: 24px;
+    color: white;
+}
+.footp{
+    font-size: 23px;
+    color: white;
+    line-height: 13px;
+}
+.footp:hover{
+    color:#fa5d00;
+}
+a{
+    text-decoration: none;
+}
+#forecast{
+    border: 1px solid #81999c;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+#fort{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#81999c;
+}
+#two{
+    margin-left: 75px;
+    width: 30%;
+    margin-top: 50px;
+}
+#twop{
+    font-size: 23px;
+    font-weight: bold;
+    color: #81999c;
+}
+#social{
+    display: flex;
+   
+    height: 100px;
+    margin-left: 370px;
+    margin-top: 50px;
+}
+#footbox2{
+    height:100px;
+  
+    display: flex;
+}
+.soc>img{
+    height:50%;
+}
+.soc{
+    display: flex;
+}
+.kk{
+    color: white;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-right: 40px;
+}

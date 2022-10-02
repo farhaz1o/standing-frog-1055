@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Harvest-Integrations</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <link rel='stylesheet' type='text/css' media='screen' href='./styles/integration.css'>
+     <link rel="stylesheet" href="./styles/index.css">
+<link rel="stylesheet" href="./styles/footer.css">
+    
+
+</head>
+<body>
+  <div id="conti"></div>
+   <div id="upper">
+      <div id="up">
+          <h1>Time tracking integrated with your team’s favorite apps</h1>
+          <p>Harvest works with the most popular tools so your team can track time effortlessly.</p>
+      </div>
+      <div id="low" class="orbit">
+            <div id="under" class="center-image">
+                <img src="https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/integrations/integrations-wheel.svg" alt=""> 
+            </div>
+        <ul>
+          <li>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-asana.png?width=90&name=integration-bubble-asana.png" alt="">
+          </li>
+          <li>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-gcal.png?width=90&name=integration-bubble-gcal.png" alt="">
+          </li>
+          <li>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-jira.png?width=90&name=integration-bubble-jira.png" alt="">
+          </li>
+          <li>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-github.png?width=90&name=integration-bubble-github.png" alt="">
+          </li>
+          <li>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-stripe.png?width=90&name=integration-bubble-stripe.png" alt="">
+          </li>
+          <li>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-trello.png?width=90&name=integration-bubble-trello.png" alt="">
+          </li>
+          <li>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-qbo.png?width=90&name=integration-bubble-qbo.png" alt="">
+          </li>
+          <li>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/raw_assets/public/harvest-theme/images/integrations/integration-bubble-slack.png?width=90&name=integration-bubble-slack.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <hr id="hr">
+    <input type="search" oninput="search()" placeholder="&#128269 Find an app or service you use" id="search">
+    <div id="up2">
+        <div id="btn">
+            <h3 onclick="appendData(data)">All Integrations</h3>
+            <h3 onclick="btnFun(2)">Analytics & reporting</h3>
+            <h3 onclick="btnFun(3)">Browser extensions</h3>
+            <h3 onclick="btnFun(4)">Communication & CRM</h3>
+            <h3 onclick="btnFun(5)">Contracts & proposals</h3>
+            <h3 onclick="btnFun(6)">Development & connectivity</h3>
+            <h3 onclick="btnFun(7)">Featured integrations</h3>
+            <h3 onclick="btnFun(8)">Finance & payments</h3>
+            <h3 onclick="btnFun(9)">Issue tracking & support</h3>
+            <h3 onclick="btnFun(10)">Productivity</h3>
+            <h3 onclick="btnFun(2)">Project management</h3>
+        </div>
+        <div id="container">
+         
+        </div>
+    </div>
+   <hr id="hr" class="hr">
+
+    <div id="low1">
+        <div id="first">
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/illo-180-integrations.svg" alt="">
+        </div>  
+        <div id="last">
+            <h1>Build your own Harvest integration</h1>
+            <p>Extend the functionality of your app by easily adding Harvest timers, or build a bespoke integration with the Harvest API.</p>
+            <button>Browse options</button>
+        </div>
+     
+    </div>
+     <hr id="hr">  
+    <div id="lower">
+        <div>
+            <div>
+               <h1>Start tracking time today</h1>
+               <p>Join 70,000+ companies spending their time wisely with Harvest.</p>
+            </div>
+            <div>
+               <button>Try Harvest free</button>
+               <span>Free 30-day trial. No credit card required.</span>
+         </div>
+        </div>
+        <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg" alt="">
+        </div>
+    </div>
+    <div id="footer_container"></div>
+</body>
+</html>
+<script src="./scripts/integration.js"></script>
+
+<script type="module">
+  import navbar from './components/navbar.js';
+  console.log('navbar:',navbar);
+  
+  let container=document.getElementById("conti");
+  conti.innerHTML=navbar();
+</script>
+
+<script type="module">
+  import footer from './components/footer.js'
+  console.log('footer:',footer);
+  let footerC=document.getElementById("footer_container");
+  footerC.innerHTML=footer();
+</script>
+
+

@@ -1,0 +1,51 @@
+
+#main{
+    width: 55%;
+    margin:50px auto;
+}
+#main>p{
+    margin: 10px 0px;
+}
+#main>div{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+::placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+   
+}
+input{
+    padding-left: 10px;
+    font-weight: bold;
+}
+textarea{
+    padding-left: 10px;
+}
+
+#client_currency_code,#name,#buttons,#textarea{
+   width: 70%;
+   height: 40px;
+   border-radius: 5px;
+}
+#textarea{
+    line-height: 1.4;
+    overflow: auto;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    resize: vertical;
+}
+#buttons>button{
+    font-size: 16px;
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    /* border: 2px solid; */
+}
+#buttons>button:nth-child(1){
+    background-color: green;
+    color: white;
+}
+

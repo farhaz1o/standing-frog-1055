@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest-Customers</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/customer.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+    <div id="conti"></div>
+    <div id="headerblock">
+        <h1>See how Harvest helps teams like yours thrive</h1>
+        <h3>Teams of all sizes, across industries, and around the world track time with Harvest.</h3>
+
+        <!-- detail bar -->
+        <div id="detailbar">
+            <div class="customer">
+                <div class="fact">
+                    <h2>70,000+</h2>
+                    <h4>customers</h4>
+                </div>
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/icons/illo-70-person.svg"
+                    alt="">
+            </div>
+            <div class="customer middle">
+                <div class="fact">
+                    <h2>2 billion</h2>
+                    <h4>hours tracked</h4>
+                </div>
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/icons/illo-70-keep.svg"
+                    alt="">
+            </div>
+            <div class="customer ">
+                <div class="fact">
+                    <h2>19.6 million</h2>
+                    <h4>invoices paid</h4>
+                </div>
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/icons/illo-70-money.svg"
+                    alt="">
+            </div>
+        </div>
+        <div id="fs">
+            <div id="fimage">
+                <a href="https://www.getharvest.com/customers/dovetail"></a>
+            </div>
+            <div id="ftext">
+                <p>FEATURED STORY</p>
+                <h3>Startup studio Dovetail tracks time with Harvest to build trust with clients.</h3>
+                <!-- <a href="https://www.getharvest.com/customers/dovetail" class="btn">Read customer story</a> -->
+                <button class="btn"><a href="https://www.getharvest.com/customers/dovetail">Read customer
+                        story</a></button>
+            </div>
+        </div>
+
+        <!-- customer logo -->
+        <div id="customer_logo">
+            <div id="customer_logo_row">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-vw.svg?noresize"
+                    alt="">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-aclu.svg?noresize"
+                    alt="">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-aclu.svg?noresize"
+                    alt="">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-dell.svg?noresize"
+                    alt="">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-amnesty.svg?noresize"
+                    alt="">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-deloitte.svg?noresize"
+                    alt="">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-lululemon.svg?noresize"
+                    alt="">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-yale.svg?noresize"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <!-- <hr style="background-color: rgba(250,93,0,100%);"> -->
+
+    <!-- story section -->  
+    <section id="story_content">
+        <div id="mdiv">
+            <div id="content">
+                <h2>Find stories from teams like yours</h2>
+            </div>
+            <div id="inddata">
+                <div id="ind">
+                    <div class="industries_list" id="A" >
+                        <h3>All Industries</h3>
+                    </div>
+                    <div class="industries_list" id="ai">
+                        <h3>Architecture</h3>
+                    </div>
+                    <div class="industries_list" id="cs">
+                        <h3>Creative services</h3>
+                    </div>
+                    <div class="industries_list" id="ed">
+                        <h3>Engineering & design</h3>
+                    </div>
+                    <div class="industries_list" id="mc">
+                        <h3>Managment consulting</h3>
+                    </div>
+                    <div class="industries_list" id="wi">
+                        <h3>Web development & IT</h3>
+                    </div>
+
+                </div>
+                <div id="storydata">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tfooter">
+        <div id="timer_content">
+            <div id="flex">
+                <div id="timertext">
+                    <h2>Start tracking time today</h2>
+                    <h4>Join 70,000+ companies spending their time wisely with Harvest.</h4>
+                </div>
+                <div id="freetrailer">
+                    <button class="btn" id="fbtn"><a href="/signup.html">Try Harvest Free</a></button>
+                    <div class="trailterms">Free 30-day trial. No credit card required.</div>
+                </div>
+            </div>
+            <!-- image in footer -->
+            <div id="image">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg"
+                    alt="">
+            </div>
+        </div>
+
+    </section>
+    <div id="footer_container"></div>
+</body>
+
+</html>
+
+<script src="./scripts/customer.js"></script>
+
+<script type="module">
+    import navbar from './components/navbar.js';
+    console.log('navbar:',navbar);
+    
+    let conti=document.getElementById("conti");
+    conti.innerHTML=navbar();
+</script>
+
+<link rel="stylesheet" href="./styles/footer.css">
+
+<script type="module">
+    import footer from './components/footer.js'
+    console.log('footer:',footer);
+    let footerC=document.getElementById("footer_container");
+    footerC.innerHTML=footer();
+</script>
+
+
+
