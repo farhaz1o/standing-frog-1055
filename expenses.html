@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://kit.fontawesome.com/793365a31d.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./style/expenses.css">
+    <!-- <link rel="stylesheet" href="./components/bottom.css">
+         <link rel="stylesheet" href="./style/post_nav.css"> -->
+</head>
+<body>
+    <nav id="navbar"></nav>
+    <div id="main">
+        <h1>Expenses</h1>
+        <div id="trackExp">
+            <button id="track" style="background-color: green; color:white;"><b><i class="fa-solid fa-plus"></i> Track expenses</b></button>
+            <button id="team" style="background-color: white; color:black;"><b>Teammates <i class="fa-solid fa-chevron-down"></i></b>  </button>
+        </div>
+        <div id="teammates">
+        </div>
+        <div id="expensesForm">
+            <div>
+                <div style="width:15% ;">
+                    <h4>Date</h4>
+                    <input type="date" id="date">
+                </div>
+                <div style="width:65% ;">
+                    <h4>Project / Category</h4>
+                    <select name="" id="chooseProject">
+                        <option value="">Choose a project...</option>
+                        <option value="standing frog">standing frog</option>
+                        <option id="olo" value="harvest">Harvest</option>
+                    </select>
+                    <select name="" id="category">
+                        <option value="">Choose a category...</option>
+                        <option value="Entertainment ">Entertainment</option>
+                        <option value="Lodging">Lodging</option>
+                        <option value="Meal">Meal</option>
+                        <option value="Mileage">Mileage</option>
+                        <option value="Other">Other</option>
+                        <option value="Transportation">Transportation</option>
+                    </select><br>
+                    <input type="text" placeholder="Notes (Optional)" id="notes"><br>
+                    <div style="border: 1px dotted; 
+                                height: 40px; 
+                                margin: 5px 5px 10px 5px;
+                                border-radius: 5px;
+                                background-color: rgb(243, 240, 240); ">Attach receipt</div>
+
+                    <input type="checkbox" style="width: 20px;" id="checkbox">
+                    <label id="ok" for="checkbox">This expense is billable</label><br><br>
+            
+                    <button style="background-color: green; color:white;" id="saveExp_btn">Save expense</button>
+                    <button style="background-color: white; color:black; border: 1px solid grey;" id="cancel_btn">Cancel</button>
+                </div>
+                <div style="width:20% ;">
+                    <h4>Amount</h4>
+                    <input type="number" placeholder="$" id="amount" style="height: 80px; font-size: 20px; padding: 5px;">
+                </div>
+            </div>
+        </div>
+
+        <div id="addedExp">
+            <hr>
+            <div>
+                <h4>22 - 02 Sep 2022</h4>
+                <a href="#">Submit for approval</a>
+            </div>
+            <hr>
+            <div id="container">
+                <!-- <div id="box">
+                    <div>date</div>
+                    <div>
+                       <h4>project</h4>
+                       <p>category</p>
+                       <p>notes</p>
+                    </div>
+                    <h4>expense</h4>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <hr> -->
+            </div>
+            <div id="total">Total</div>
+        </div>
+    </div>
+
+    <div id="bottom">
+       
+    </div>
+</body>
+</html>
+<!-- <script>
+    let a=JSON.parse(localStorage.getItem("harvestlogin"));
+    document.getElementById("olo").innerText=a.data[0].project
+
+</script> -->
+<script src="./script/expenses.js"type="module"></script>
+<!-- <script src="/script/test.js" type="module"></script> -->
