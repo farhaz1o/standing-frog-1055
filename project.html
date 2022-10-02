@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2 Page</title>
+    <link rel="stylesheet" href="./styles/post_nav.css">
+    <link rel="stylesheet" href="./css/project.css">
+    
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="wholeOuterBody">
+
+        <div class="pageBody">
+            <button onclick="lkl()" id="newProjectBtn">+ New Project</button>
+        </div>
+        <div class="pageBody">
+            <h1 id="proTitle">Projects</h1>
+        </div>
+        <div id="belowHeader">
+            <div id="activePro">
+                <select name="" id="">
+                    <option value="">Active Projects</option>
+                    <option value="">Budget Projects</option>
+                    <option value="">Archived Projects</option>
+                </select>
+            </div>
+            <div id="filterProject">
+                <select name="" id="">
+                    <option value="">Filter By Client</option>
+                </select>
+                <select name="" id="">
+                    <option value="">Filter By Manager</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="pageBody">
+            <table>
+                <thead>
+                    <tr class="tableRowList">
+
+                        <th>Client</th>
+                        <th>Project Name</th>
+                        <th>Budget</th>
+                        <th>Spent</th>
+                        <th>Progress</th>
+                        <th>Remaining</th>
+                        <th>Costs</th>
+                    </tr>
+                </thead>
+
+                <tbody id="body">
+
+                    
+                       
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script src="./script/project.js"></script>
