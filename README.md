@@ -43,6 +43,7 @@ Harvest is a cloud-based time tracking tool designed for businesses of all sizes
 ### Login Page
 
 <hr>
+
 ![Screenshot (10)](./Img/Screenshot%20(205).png?raw=true)
 
 <hr>
